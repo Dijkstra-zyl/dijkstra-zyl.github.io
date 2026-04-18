@@ -1,12 +1,212 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>Dijkstra_zyl | OIer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Dijkstra_zyl · OIer 主页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Fira Code', 'Consolas', monospace;
+            background: linear-gradient(145deg, #0b1120 0%, #111827 100%);
+            color: #e2e8f0;
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* 卡片风格 */
+        .card {
+            background: rgba(15, 25, 45, 0.7);
+            backdrop-filter: blur(4px);
+            border-radius: 2rem;
+            padding: 1.8rem 2rem;
+            margin-bottom: 2rem;
+            border: 1px solid rgba(56, 189, 248, 0.2);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .card:hover {
+            border-color: #38bdf8;
+            transform: translateY(-3px);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            background: linear-gradient(135deg, #90dffe, #38bdf8);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            border-left: 5px solid #38bdf8;
+            padding-left: 1rem;
+            color: #b9e2ff;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            margin: 1rem 0 0.5rem;
+            color: #94a3b8;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #1e293b;
+            padding: 0.2rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            color: #90dffe;
+            border: 1px solid #2d3a5e;
+        }
+
+        .links a {
+            color: #38bdf8;
+            text-decoration: none;
+            margin-right: 1.5rem;
+            font-weight: 500;
+            transition: 0.2s;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+            color: #7dd3fc;
+        }
+
+        .progress-bar {
+            background: #1e293b;
+            border-radius: 20px;
+            height: 10px;
+            overflow: hidden;
+            margin: 0.8rem 0;
+        }
+
+        .progress-fill {
+            background: #38bdf8;
+            width: 0%;
+            height: 100%;
+            border-radius: 20px;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 0.8rem;
+            color: #5b6e8c;
+            margin-top: 2rem;
+            border-top: 1px solid #1e2a3a;
+            padding-top: 1.5rem;
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                padding: 1.2rem;
+                <img src="https://cdn.luogu.com.cn/upload/image_hosting/5euiylgr.png" style="width:100px; border-radius:50%;">
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>你好，我是 Dijkstra_zyl</h1>
-    <p>OIer | 初一 | 目标：省队</p>
-    <p>欢迎来到我的个人主页！</p>
+<div class="container">
+    <!-- 头部简介 -->
+    <div class="card">
+        <h1>Dijkstra_zyl</h1>
+        <p style="margin-top: 8px;">✧ 初一 OIer | 银川十二中 | 目标: 省队 · NOI金牌 ✧</p>
+        <p style="margin-top: 12px; color: #9ca3af;">
+            热爱算法、物理与数学，正在向提高组稳步前进。<br>
+            坚信「代码是逻辑的诗篇，AC 是最好的回响」。
+        </p>
+        <div class="links" style="margin-top: 1rem;">
+            <a href="https://www.luogu.com.cn/user/1754608" target="_blank">洛谷</a>
+            <a href="https://github.com/Dijkstra-zyl" target="_blank">GitHub</a>
+            <a href="https://codeforces.com/profile/Dijkstra_zyl" target="_blank">Codeforces</a>
+            <a href="https://atcoder.jp/users/Dijkstra_zyl" target="_blank">AtCoder</a>
+        </div>
+    </div>
+
+    <!-- 学习进度 & 技能 -->
+    <div class="card">
+        <h2>📈 当前进度</h2>
+        <div class="grid-2">
+            <div>
+                <p><strong>OI</strong> – 搜索 ✔ &nbsp;|&nbsp; DP (背包/线性) 🔄 &nbsp;|&nbsp; 图论 进行中</p>
+                <div class="progress-bar"><div class="progress-fill" style="width: 55%;"></div></div>
+                <p><strong>高中数学</strong> – 集合 / 函数 / 数列</p>
+                <div class="progress-bar"><div class="progress-fill" style="width: 30%;"></div></div>
+                <p><strong>物理</strong> – 力学 (压强/浮力) + 电学基础</p>
+                <div class="progress-bar"><div class="progress-fill" style="width: 45%;"></div></div>
+            </div>
+            <div>
+                <p><strong>日常工具</strong></p>
+                <span class="badge">C++</span>
+                <span class="badge">GitHub</span>
+                <span class="badge">VS Code</span>
+                <span class="badge">LaTeX</span>
+                <p style="margin-top: 12px;"><strong>正在啃的算法</strong></p>
+                <span class="badge">树形DP</span>
+                <span class="badge">最短路(Dijkstra)</span>
+                <span class="badge">线段树基础</span>
+                <span class="badge">记忆化搜索</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 近期项目 / 亮点 -->
+    <div class="card">
+        <h2>⚙️ 自造小工具 & 项目</h2>
+        <ul style="margin-left: 1.2rem; list-style-type: none;">
+            <li>🔹 <strong>AC进度条</strong> – 每日AC数可视化 + 开机自启</li>
+            <li>🔹 <strong>OIer桌面宠物</strong> – 根据AC数切换表情的🦖</li>
+            <li>🔹 <strong>洛谷·考场模式</strong> – 一键打印试卷风格PDF</li>
+            <li>🔹 <strong>OI语录生成器</strong> – 随机刷梗，写代码时的快乐源泉</li>
+        </ul>
+        <p style="margin-top: 12px;">✨ 所有项目代码都在 <a href="https://github.com/Dijkstra-zyl" target="_blank" style="color:#38bdf8;">GitHub 仓库</a> 中，持续更新～</p>
+    </div>
+
+    <!-- 近期学习目标 -->
+    <div class="card">
+        <h2>🎯 近期战役</h2>
+        <ul style="margin-left: 1.5rem;">
+            <li>✅ 复习搜索 + 背包DP专题</li>
+            <li>🔄 期中考试冲刺</li>
+            <li>📌 五月前：完成高中函数入门 + 树形DP专项</li>
+        </ul>
+    </div>
+
+    <!-- 一句随想 -->
+    <div class="card" style="text-align: center; background: #0f172ac9;">
+        <p style="font-style: italic; color: #b9e2ff;">“不是所有的算法都会一次AC，但每一次WA都是通往省队的垫脚石。”</p>
+        <p style="margin-top: 10px;">—— Dijkstra_zyl</p>
+    </div>
+
+    <div class="footer">
+        🧩 保持热爱 · 共赴山海 | 最后更新: 2026.04.18
+    </div>
+</div>
 </body>
 </html>
