@@ -41,6 +41,24 @@
             transform: translateY(-3px);
         }
 
+        /* 头像和标题的布局 */
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #38bdf8;
+            box-shadow: 0 0 10px rgba(56, 189, 248, 0.3);
+        }
+
         h1 {
             font-size: 2.5rem;
             background: linear-gradient(135deg, #90dffe, #38bdf8);
@@ -123,24 +141,33 @@
         @media (max-width: 600px) {
             .card {
                 padding: 1.2rem;
-                <img src="https://raw.githubusercontent.com/Dijkstra-zyl/dijkstra-zyl.github.io/main/avatar.png" style="width:100px; border-radius:50%;">
             }
             h1 {
                 font-size: 1.8rem;
+            }
+            .profile {
+                justify-content: center;
+                text-align: center;
             }
         }
     </style>
 </head>
 <body>
 <div class="container">
-    <!-- 头部简介 -->
+    <!-- 头部简介（带头像） -->
     <div class="card">
-        <h1>Dijkstra_zyl</h1>
-        <p style="margin-top: 8px;">✧ 初一 OIer | 银川十二中 | 目标: 省队 · NOI金牌 ✧</p>
-        <p style="margin-top: 12px; color: #9ca3af;">
-            热爱算法、物理与数学，正在向提高组稳步前进。<br>
-            坚信「代码是逻辑的诗篇，AC 是最好的回响」。
-        </p>
+        <div class="profile">
+            <!-- 头像部分，使用你 GitHub 仓库里的图片 -->
+            <img class="avatar" src="https://raw.githubusercontent.com/Dijkstra-zyl/dijkstra-zyl.github.io/main/avatar.png" alt="Dijkstra_zyl的头像">
+            <div>
+                <h1>Dijkstra_zyl</h1>
+                <p>✧ 初一 OIer | 银川十二中 | 目标: 省队 · NOI金牌 ✧</p>
+                <p style="margin-top: 8px; color: #9ca3af;">
+                    热爱算法、物理与数学，正在向提高组稳步前进。<br>
+                    坚信「代码是逻辑的诗篇，AC 是最好的回响」。
+                </p>
+            </div>
+        </div>
         <div class="links" style="margin-top: 1rem;">
             <a href="https://www.luogu.com.cn/user/1754608" target="_blank">洛谷</a>
             <a href="https://github.com/Dijkstra-zyl" target="_blank">GitHub</a>
@@ -165,11 +192,11 @@
                 <p><strong>日常工具</strong></p>
                 <span class="badge">C++</span>
                 <span class="badge">GitHub</span>
-                <span class="badge">VS Code</span>
+                <span class="badge">OICPP IDE</span>
                 <span class="badge">LaTeX</span>
                 <p style="margin-top: 12px;"><strong>正在啃的算法</strong></p>
-                <span class="badge">树形DP</span>
-                <span class="badge">最短路(Dijkstra)</span>
+		<span class="badge">搜索</span>
+                <span class="badge">动态规划</span>
                 <span class="badge">线段树基础</span>
                 <span class="badge">记忆化搜索</span>
             </div>
@@ -205,7 +232,7 @@
     </div>
 
     <div class="footer">
-        🧩 保持热爱 · 共赴山海 | 最后更新: 2026.04.18
+        🧩 保持热爱 · 共赴山海 | 最后更新: 2026.04.19
     </div>
 </div>
 </body>
